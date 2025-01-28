@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Categories</title>
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="/file.png" alt="Gift Shop Logo" class="logo">
+            
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Gift Categories</h1>
+        
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+            <button class="category-btn" onclick="filterProducts('Mugs')">Mugs</button>
+            <button class="category-btn" onclick="filterProducts('Cards')">Cards</button>
+            <button class="category-btn" onclick="filterProducts('Bracelets')">Bracelets</button>
+            <button class="category-btn" onclick="showAllProducts()">Show All Products</button>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="product-list" id="product-list">
+            <!-- Dummy Product Cards will go here -->
+            <div class="product-card category-Mugs">
+                <img src="https://cdn.shopify.com/s/files/1/0266/3546/8881/files/matching-cartoon-characters-on-mugs-for-couples-2.jpg?v=1673863903" alt="Mug">
+                <h3>Mug 1</h3>
+                <p>Great mug for coffee lovers!</p>
+                <button class="mug"><a href="Funny Quote Mug.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Mugs">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/06b0f8177659081.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Mug">
+                <h3>Mug 2</h3>
+                <p>Enjoy your drinks in style.</p>
+                <button class="mug"><a href="Personalized Photo Mug.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Mugs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuzGInZZ4eN9_tzaUXHRZhXrGEOVSrdjMr_A&s" alt="Mug">
+                <h3>Mug 3</h3>
+                <p>Great mug for coffee lovers!</p>
+                <button class="mug"><a href="Travel Mug with Lid.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Mugs">
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/173696691/original/7955059c0579de65eb93cc78f560770da49c150d/create-a-custom-coffee-mug-design.jpg" alt="Mug">
+                <h3>Mug 4</h3>
+                <p>Great mug for coffee lovers!</p>
+                <button class="mug"><a href="Travel Mug with Lid.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Mugs">
+                <img src="https://cdn.dribbble.com/userupload/5151863/file/still-1527d3959c248ae272d952a0a98ce07c.gif?resize=400x0" alt="Mug">
+                <h3>Mug 5</h3>
+                <p>Great mug for coffee lovers!</p>
+                <button class="mug"><a href="Double.docx" download><b>Download</b></a></button>
+            
+            </div>
+            <div class="product-card category-Cards">
+                <img src="https://creativekhadija.com/wp-content/uploads/2017/02/Valentines-Day-Creative-Handmade-Cards-forsale.jpg" alt="Card">
+                <h3>Greeting Card 1</h3>
+                <p>Personalized card for every occasion.</p>
+                <button class="card-button"><a href="Cards 1.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Cards">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/XW/SO/PK/65613955/birthday-card-designing-service-500x500.png" alt="Card">
+                <h3>Greeting Card 2</h3>
+                <p>Special greeting for your loved ones.</p>
+                <button class="card-button"><a href="Cards 2.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Cards">
+                <img src="https://img.pikbest.com/templates/20240825/spring-wedding-invitation-card-design-greeting-cards-elegant-wonderful-bg-4_10758975.jpg!w700wp" alt="Card">
+                <h3>Greeting Card 3</h3>
+                <p>Special greeting for your loved ones.</p>
+                <button class="card-button"><a href="Cards 3.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Cards">
+                <img src="https://i.ytimg.com/vi/yeWJNsMrXEo/maxresdefault.jpg" alt="Card">
+                <h3>Greeting Card 4</h3>
+                <p>Special greeting for your loved ones.</p>
+                <button class="card-button"><a href="Cards 4.docx" download><b>Download</b></a></button>
+            </div>
+            <div class="product-card category-Bracelets">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrWg75iFujV5L0_j9aM3CqdX3ZFaMfYk76g&s" alt="Bracelet">
+                <h3>Bracelet 1</h3>
+                <p>Elegant bracelet for any occasion.</p>
+                <button class="braceletbut"><a href="Bracelet 1.docx" download>Download</a></button>
+            </div>
+            <div class="product-card category-Bracelets">
+                <img src="https://i5.walmartimages.com/seo/Gold-Bracelets-for-Women-Titanium-Steel-Classic-Simple-Elegant-Bangle-with-Rhinestones-Decoration-for-Women-to-Adds-Sparkle-to-Any-Occasion_4e587818-3c09-417b-8d46-d05efde11ccc.177dbe02f121374d3253012beaf5009d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Bracelet">
+                <h3>Bracelet 2</h3>
+                <p>Charming bracelet to complete your style.</p>
+                <button class="braceletbut"><a href="Bracelet 2.docx" download>Download</a></button>
+            </div>
+            <div class="product-card category-Bracelets">
+                <img src="https://img.drz.lazcdn.com/static/pk/p/107675d2bbe56c9e824b86babbd9ce87.jpg_720x720q80.jpg" alt="Bracelet">
+                <h3>Bracelet 3</h3>
+                <p>Charming bracelet to complete your style.</p>
+                <button class="braceletbut"><a href="Bracelet 3.docx" download>Download</a></button>
+            </div>
+            <div class="product-card category-Bracelets">
+                <img src="https://static-01.daraz.pk/p/b4b5c7a02b5a5bfd9a3fc82d42e09f23.jpg" alt="Bracelet">
+                <h3>Bracelet 4</h3>
+                <p>Charming bracelet to complete your style.</p>
+                <button class="braceletbut"><a href="Bracelet 4.docx" download>Download</a></button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gift Shop | All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterProducts(category) {
+            const allProducts = document.querySelectorAll('.product-card');
+            allProducts.forEach(product => {
+                if (product.classList.contains('category-' + category)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        function showAllProducts() {
+            const allProducts = document.querySelectorAll('.product-card');
+            allProducts.forEach(product => {
+                product.style.display = 'block';
+            });
+        }
+    </script>
+</body>
+</html>
