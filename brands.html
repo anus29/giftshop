@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Brands</title>
+    
+    <link rel="stylesheet" href="Brands.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="/file.png" alt="Gift Shop Logo" class="logo">
+            
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1><b>Gift Brands</b></h1>
+        
+        <!-- Brand Buttons -->
+        <div class="brand-buttons">
+            <button class="brand-btn" onclick="filterBrand('Hallmark')" >Hallmark</button>
+            <button class="brand-btn" onclick="filterBrand('OtherBrand')">Other Brand</button>
+            <button class="brand-btn" onclick="showAllBrands()">Show All Products</button>
+        </div>
+
+        <!-- Product Cards -->
+        <div class="product-list" id="product-list">
+            <!-- Dummy Product Cards for each brand -->
+            <div class="product-card brand-Hallmark">
+                <img src="https://cdn.shopify.com/s/files/1/0266/3546/8881/files/matching-cartoon-characters-on-mugs-for-couples-2.jpg?v=1673863903" alt="Hallmark Product 1 Mugs">
+                <h3>Hallmark Product 1</h3>
+                <p>Lovely gift from Hallmark</p>
+            </div>
+            <div class="product-card brand-Hallmark">
+                <img src="/Valentines-Day-Creative-Handmade-Cards-forsale.jpg" alt="Hallmark Product 2">
+                <h3>Hallmark Product 2</h3>
+                <p>Special occasion gift from Hallmark</p>
+            </div>
+            <div class="product-card brand-OtherBrand">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrWg75iFujV5L0_j9aM3CqdX3ZFaMfYk76g&s" alt="Other Brand Product 1">
+                <h3>Other Brand Product 1</h3>
+                <p>Premium product from Other Brand</p>
+            </div>
+            <div class="product-card brand-OtherBrand">
+                <img src="https://i5.walmartimages.com/seo/Gold-Bracelets-for-Women-Titanium-Steel-Classic-Simple-Elegant-Bangle-with-Rhinestones-Decoration-for-Women-to-Adds-Sparkle-to-Any-Occasion_4e587818-3c09-417b-8d46-d05efde11ccc.177dbe02f121374d3253012beaf5009d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Other Brand Product 2">
+                <h3>Other Brand Product 2</h3>
+                <p>Elegant product from Other Brand</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gift Shop | All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterBrand(brand) {
+            const allProducts = document.querySelectorAll('.product-card');
+            allProducts.forEach(product => {
+                if (product.classList.contains('brand-' + brand)) {
+                    product.style.display = 'block'; // Show the product
+                } else {
+                    product.style.display = 'none'; // Hide non-matching products
+                }
+            });
+        }
+
+        function showAllBrands() {
+            const allProducts = document.querySelectorAll('.product-card');
+            allProducts.forEach(product => {
+                product.style.display = 'block'; // Show all products
+            });
+        }
+    </script>
+</body>
+</html>
